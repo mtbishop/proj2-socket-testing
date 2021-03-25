@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="ftco-section contact-section">
+        <div class="container">
+            <div class="row block-9">
+                <div class="col-md-12 order-md-last d-flex">
+                    <form action="#" class="bg-light p-5 contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" cols="30" rows="7" class="form-control" placeholder="Message"
+                                id="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" onclick="sendMessage()" value="Send Message"
+                                class="btn btn-primary py-3 px-5">
+                        </div>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+</body>
+
+</html>
